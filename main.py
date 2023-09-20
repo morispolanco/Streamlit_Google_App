@@ -128,7 +128,7 @@ def main():
 
         country_name = st.sidebar.selectbox("Country", countries_list)
         email_type = st.sidebar.selectbox("Email Type", email_extensions_list)
-        num_per_page = st.sidebar.number_input ("Number of Results Per Page", 100, 100, step=10)
+        num_per_page = st.sidebar.number_input ("Number of Results Per Page", 1000, 1000, step=10)
 
         tasks_list = ["Emails", "URLS", "Phonenumbers"]
         task_option = st.sidebar.multiselect("Task", tasks_list, default="Emails")
